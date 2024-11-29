@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NCERT Biology DNA Structure MCQs</title>
+	<style>
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #f9f9f9;
+			padding: 20px;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.question {
+			margin-bottom: 20px;
+		}
+		
+		.options {
+			margin-bottom: 20px;
+		}
+		
+		.option {
+			padding: 10px;
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+		
+		.option:hover {
+			background-color: #eee;
+		}
+		
+		.correct {
+			background-color: #c6efce;
+		}
+		
+		.wrong {
+			background-color: #ffc6c6;
+		}
+		
+		.answer-button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.answer-button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>NCERT Biology DNA Structure MCQs</h1>
+		
+		<!-- Question 1 -->
+		<div class="question">
+			<p>What is the double helix model of DNA?</p>
+			<div class="options">
+				<div class="option wrong" id="q1o1">A linear molecule with a sugar-phosphate backbone</div>
+				<div class="option correct" id="q1o2">A double-stranded helix with sugar-phosphate backbone and nitrogenous bases</div>
+				<div class="option wrong" id="q1o3">A single-stranded helix with sugar-phosphate backbone and nitrogenous bases</div>
+				<div class="option wrong" id="q1o4">A triple-stranded helix with sugar-phosphate backbone and nitrogenous bases</div>
+			</div>
+			<button class="answer-button" onclick="showAnswer(1)">Show Answer</button>
+			<div id="q1answer"></div>
+		</div>
+		
+		<!-- Question 2 -->
+		<div class="question">
+			<p>Who proposed the double helix model of DNA?</p>
+			<div class="options">
+				<div class="option correct" id="q2o1">James Watson and Francis Crick</div>
+				<div class="option wrong" id="q2o2">Rosalind Franklin and Maurice Wilkins</div>
+				<div class="option wrong" id="q2o3">Linus Pauling and Erwin Chargaff</div>
+				<div class="option wrong" id="q2o4">Albert Einstein and Marie Curie</div>
+			</div>
+			<button class="answer-button" onclick="showAnswer(2)">Show Answer</button>
+			<div id="q2answer"></div>
+		</div>
+		
+		<!-- Question 3 -->
+		<div class="question">
+			<p>What is the sugar molecule present in DNA?</p>
+			<div class="options">
+				<div class="option wrong" id="q3o1">Ribose</div>
+				<div class="option correct" id="q3o2">Deoxyribose</div>
+				<div class="option wrong" id="q3o3">Fructose</div>
+				<div class="option wrong" id="q3o4">Glucose</div>
+			</div>
+			<button class="answer-button" onclick="showAnswer(3)">Show Answer</button>
+			<div id="q3answer"></div>
+		</div>
+		
+		<script>
+			function showAnswer(questionNumber) {
+				var answerDiv = document.getElementById("q" + questionNumber + "answer");
+				var correctOption = document.getElementsByClassName("correct")[questionNumber - 1];
+				answerDiv.innerHTML = "Correct answer: " + correctOption.textContent;
+			}
+		</script>
+	</div>
+</body>
+</html>
